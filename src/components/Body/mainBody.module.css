@@ -1,0 +1,18 @@
+.choiceTitle {
+     display: flex;
+     justify-content: center;
+     font-size: 35px;
+     font-weight: bolder;
+     margin: 15px 0;
+     color: beige;
+}
+
+.choiceTitle > span {
+     color: yellow;
+}
+
+@media (max-width:768px){
+     .choiceTitle {
+     font-size: 25px;
+     }
+}

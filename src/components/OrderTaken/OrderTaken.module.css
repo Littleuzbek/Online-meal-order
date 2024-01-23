@@ -1,0 +1,55 @@
+.orderTaken {
+    width: 60vw;
+    height: auto;
+    background-color: rgb(153, 165, 42);
+    border-radius: 10px;
+  }
+  
+  .orderTaken > h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+  }
+
+  .orderItem {
+    overflow-y: auto;
+    max-height: 20rem;
+  }
+  
+  .orderTaken > .totalAmount {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 10px 0;
+    width: 100%;
+  }
+  
+  .orderTaken > .totalAmount > span {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 10px 0 0;
+  }
+  
+  .orderTaken > .totalAmount > .actions > button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: brown;
+  }
+
+  @media (max-width: 768px) {
+    .orderTaken {
+      width: 80vw;
+    }
+    .orderTaken > .totalAmount {
+      flex-wrap: wrap;
+    }
+    .orderTaken > .totalAmount > span {
+      font-size: 15px;
+    }
+    .orderTaken > .totalAmount > .actions > button {
+      justify-self: flex-end;
+      color: white;
+    }
+  }
+  

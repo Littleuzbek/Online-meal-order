@@ -1,0 +1,109 @@
+.discountParty {
+  background-image: url('../../../pictures/discountpic.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 67vh;
+  margin: 80px 0 0 0;
+  scroll-snap-align: center;
+}
+
+.discountItems {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 65vh;
+  background-color: rgba(41, 41, 35, 0.568);
+  scroll-snap-align: center;
+}
+
+.offerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 0 0;
+  width: 38%;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: bolder;
+  color: white;
+}
+
+.offerTitle > p {
+  margin: 5px 0;
+}
+
+.offerTitle > p:nth-of-type(1) {
+  font-size: 25px;
+}
+
+.offerTitle > p:nth-of-type(2) {
+  font-size: 30px;
+}
+
+.offerTitle > p:nth-of-type(3) {
+  cursor: pointer;
+  color: white;
+  animation: titleAnima 2s infinite;
+}
+
+.offerTitle > p:nth-of-type(3):hover {
+  color: red;
+  transition: 0.7s;
+}
+
+@keyframes titleAnima {
+  0%{
+    color: white;
+  }50%{
+    color: red;
+  }100%{
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .discountParty {
+    background-size: 100%;
+    height: auto;
+  }
+
+  .discountItems {
+    height: auto;
+  }
+
+  .discountItems > div {
+    margin-top: 20px;
+  }
+
+  .offerTitle {
+    width: 100%;
+    height: auto;
+  }
+
+  .offerTitle > p {
+    margin: 5px 0;
+  }
+
+  .offerTitle > p:nth-of-type(1) {
+    font-size: 15px;
+  }
+
+  .offerTitle > p:nth-of-type(2) {
+    font-size: 20px;
+  }
+
+  .offerTitle > p:nth-of-type(3) {
+    cursor: pointer;
+  color: rgba(19, 17, 17, 0.747);
+  }
+
+  .offerTitle > p:nth-of-type(3):hover {
+    color: red;
+    transition: 0.7s;
+  }
+}
